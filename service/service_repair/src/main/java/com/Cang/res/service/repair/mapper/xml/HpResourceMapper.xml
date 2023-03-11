@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.Cang.res.service.repair.mapper.HpResourceMapper">
+    <sql id="columns">
+        c.id,
+            c.title,
+            c.cover,
+            c.gmt_create AS gmtCreate,
+            s1.title AS categoryParentTitle,
+            s2.title AS categoryTitle
+    </sql>
+
+    <sql id="tables">
+        hp_resource c
+            LEFT JOIN hp_category s1 ON category_parent_id = s1.id
+            LEFT JOIN hp_category s2 ON category_id = s2.id
+    </sql>
+
+    <select id="selectPageByResourceQueryVo" resultType="com.Cang.res.service.repair.entity.vo.ResourceVo">
+        SELECT
+        <include refid="columns" />
+        FROM
+        <include refid="tables" />
+        ${ew.customSqlSegment}
+    </select>
+</mapper>

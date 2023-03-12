@@ -2,6 +2,7 @@ package com.Cang.res.service.repair.controller.admin;
 
 import com.Cang.res.common.base.result.R;
 import com.Cang.res.service.repair.entity.form.ResourceInfoForm;
+import com.Cang.res.service.repair.entity.vo.ResourcePublishVo;
 import com.Cang.res.service.repair.entity.vo.ResourceQueryVo;
 import com.Cang.res.service.repair.entity.vo.ResourceVo;
 import com.Cang.res.service.repair.service.HpResourceService;
@@ -31,7 +32,7 @@ public class ResourceController {
 
 
     @ApiOperation(value = "新增资源")
-    @PostMapping("save-course-info")
+    @PostMapping("save-resource-info")
     public R saveCourseInfo(
             @ApiParam(value = "资源基本信息", required = true)
             @RequestBody ResourceInfoForm resourceInfoForm) {
@@ -93,5 +94,31 @@ public class ResourceController {
         List<ResourceVo> records = pageModel.getRecords();
         long total = pageModel.getTotal();
         return R.ok().data("total", total).data("rows", records);
+    }
+
+    @ApiOperation("根据ID获取资源发布信息")
+    @GetMapping("resource-publish/{id}")
+    public R getResourcePublishVoById(
+            @ApiParam(value = "资源ID",required = true)
+            @PathVariable String id) {
+        ResourcePublishVo resourcePublishVo = resourceService.getResourcePublishVoById(id);
+        if (resourcePublishVo != null) {
+            return R.ok().data("item",resourcePublishVo);
+        } else {
+            return R.error().message("数据不存在");
+        }
+    }
+
+    @ApiOperation("根据id发布资源")
+    @PutMapping("publish-resource/{id}")
+    public R publishResourceVoById(
+            @ApiParam(value = "资源ID",required = true)
+            @PathVariable String id) {
+        boolean result = resourceService.publishResourceById(id);
+        if (result) {
+            return R.ok().message("发布成功");
+        } else {
+            return R.error().message("数据不存在");
+        }
     }
 }

@@ -1,6 +1,7 @@
 package com.Cang.res.service.repair.mapper;
 
 import com.Cang.res.service.repair.entity.HpResource;
+import com.Cang.res.service.repair.entity.vo.ResourcePublishVo;
 import com.Cang.res.service.repair.entity.vo.ResourceVo;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
@@ -28,4 +29,6 @@ public interface HpResourceMapper extends BaseMapper<HpResource> {
             // mp会自动组装queryWrapper
             // @Param(Constants.WRAPPER) 和xml文件中的 ${ew.customSqlSegment} 对应
             @Param(Constants.WRAPPER) QueryWrapper<ResourceVo> queryWrapper);
+
+    ResourcePublishVo selectResourcePublishVoById(String id);
 }

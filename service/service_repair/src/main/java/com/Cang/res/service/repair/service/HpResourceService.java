@@ -2,6 +2,7 @@ package com.Cang.res.service.repair.service;
 
 import com.Cang.res.service.repair.entity.HpResource;
 import com.Cang.res.service.repair.entity.form.ResourceInfoForm;
+import com.Cang.res.service.repair.entity.vo.ResourcePublishVo;
 import com.Cang.res.service.repair.entity.vo.ResourceQueryVo;
 import com.Cang.res.service.repair.entity.vo.ResourceVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -26,4 +27,8 @@ public interface HpResourceService extends IService<HpResource> {
     boolean removeResourceById(String id);
 
     IPage<ResourceVo> selectPage(Long page, Long limit, ResourceQueryVo resourceQueryVo);
+
+    ResourcePublishVo getResourcePublishVoById(String id);
+
+    boolean publishResourceById(String id);
 }

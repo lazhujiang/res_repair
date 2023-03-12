@@ -23,4 +23,16 @@
         <include refid="tables" />
         ${ew.customSqlSegment}
     </select>
+    <select id="selectResourcePublishVoById"
+            resultType="com.Cang.res.service.repair.entity.vo.ResourcePublishVo">
+        SELECT
+        c.id,
+        c.title,
+        c.cover,
+        s1.title AS categoryParentTitle,
+        s2.title AS categoryTitle
+        FROM
+        <include refid="tables" />
+        WHERE c.id = #{id}
+    </select>
 </mapper>

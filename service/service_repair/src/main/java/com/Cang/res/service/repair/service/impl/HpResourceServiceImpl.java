@@ -3,6 +3,7 @@ package com.Cang.res.service.repair.service.impl;
 import com.Cang.res.service.repair.entity.HpResource;
 import com.Cang.res.service.repair.entity.HpResourceDescription;
 import com.Cang.res.service.repair.entity.form.ResourceInfoForm;
+import com.Cang.res.service.repair.entity.vo.ResourcePublishVo;
 import com.Cang.res.service.repair.entity.vo.ResourceQueryVo;
 import com.Cang.res.service.repair.entity.vo.ResourceVo;
 import com.Cang.res.service.repair.mapper.HpResourceDescriptionMapper;
@@ -134,5 +135,17 @@ public class HpResourceServiceImpl extends ServiceImpl<HpResourceMapper, HpResou
         // 放入分页参数和查询条件参数，mp会自动组装
         List<ResourceVo> records =  baseMapper.selectPageByResourceQueryVo(pageParam,queryWrapper);
         return pageParam.setRecords(records);
+    }
+
+    @Override
+    public ResourcePublishVo getResourcePublishVoById(String id) {
+        return baseMapper.selectResourcePublishVoById(id);
+    }
+
+    @Override
+    public boolean publishResourceById(String id) {
+        HpResource resource = new HpResource();
+        resource.setId(id);
+        return this.updateById(resource);
     }
 }

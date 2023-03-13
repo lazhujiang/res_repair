@@ -13,4 +13,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface HpChapterService extends IService<HpChapter> {
     boolean removeChapterById(String id);
+
+    // 获取资源链接的ID
+    HpChapter getResourceById(String id);
 }

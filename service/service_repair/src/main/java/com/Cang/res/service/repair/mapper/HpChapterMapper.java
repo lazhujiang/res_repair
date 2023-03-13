@@ -15,4 +15,5 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface HpChapterMapper extends BaseMapper<HpChapter> {
 
+    HpChapter getResourceById(String id);
 }

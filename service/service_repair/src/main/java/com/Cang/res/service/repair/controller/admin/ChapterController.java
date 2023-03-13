@@ -43,14 +43,14 @@ public class ChapterController {
 
     @ApiOperation("根据id查询资源")
     @GetMapping("get/{id}")
-    public R getById(
+    public R getResourceById(
             @ApiParam(value="资源id", required = true)
             @PathVariable String id){
-        HpChapter chapter = chapterService.getById(id);
+        HpChapter chapter = chapterService.getResourceById(id);
         if (chapter != null) {
             return R.ok().data("item", chapter);
         } else {
-            return R.error().message("数据不存在");
+            return R.error().message("请添加该资源的下载途径");
         }
     }
 

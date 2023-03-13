@@ -1,6 +1,7 @@
 package com.Cang.res.service.repair.service.impl;
 
 import com.Cang.res.service.repair.entity.HpChapter;
+import com.Cang.res.service.repair.entity.HpResource;
 import com.Cang.res.service.repair.mapper.HpChapterMapper;
 import com.Cang.res.service.repair.service.HpChapterService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -22,5 +23,12 @@ public class HpChapterServiceImpl extends ServiceImpl<HpChapterMapper, HpChapter
         // 资源信息
         // 删除资源
         return this.removeById(id);
+    }
+
+    // 获取资源链接的ID
+    @Override
+    public HpChapter getResourceById(String id) {
+        HpChapter chapter = baseMapper.getResourceById(id);
+        return chapter;
     }
 }

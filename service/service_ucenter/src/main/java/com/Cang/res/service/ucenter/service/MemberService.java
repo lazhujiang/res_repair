@@ -1,6 +1,7 @@
 package com.Cang.res.service.ucenter.service;
 
 import com.Cang.res.service.ucenter.entity.Member;
+import com.Cang.res.service.ucenter.entity.vo.RegisterVo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -13,4 +14,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface MemberService extends IService<Member> {
 
+    Integer countRegisterNum(String day);
+
+    void register(RegisterVo registerVo);
 }

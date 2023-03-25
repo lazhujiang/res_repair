@@ -33,7 +33,7 @@ public class RedisTimer {
 
     // 获取当天的Key
     private static String getKey() {
-        return "inveit_code";
+        return "invite_code";
     }
 
     // 生成50个随机时间戳

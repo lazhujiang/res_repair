@@ -13,12 +13,18 @@ import com.Cang.res.service.ucenter.mapper.MemberMapper;
 import com.Cang.res.service.ucenter.service.MemberService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.redisson.api.RBloomFilter;
+import org.redisson.api.RedissonClient;
+import org.redisson.api.RLock;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 import redis.clients.jedis.Jedis;
 
+import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * <p>
@@ -31,7 +37,13 @@ import java.util.List;
 @Service
 public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> implements MemberService {
 
-    private static final String INVEIT_CODE_KEY = "inveit_code";
+    private static final String INVITE_CODE_KEY = "invite_code";
+
+    @Resource
+    private RedissonClient redissonClient;
+
+    @Resource
+    private RBloomFilter MemberBloomFilter;
 
     @Override
     public Integer countRegisterNum(String day) {
@@ -45,6 +57,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         String mobile = registerVo.getMobile();
         String password = registerVo.getPassword();
         String code = registerVo.getCode();
+        log.warn(code);
 
         // 校验参数
         if (StringUtils.isEmpty(mobile)
@@ -56,19 +69,19 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         }
 
         // 校验邀请码
-        Jedis jedis = new Jedis("localhost");
-        // 获取inveit_code列表中所有元素
-        List<String> inveitCodes = jedis.lrange(INVEIT_CODE_KEY, 0, -1);
+        Jedis jedis = new Jedis("localhost", 6379);
+        // 获取invite_code列表中所有元素
+        List<String> inviteCodes = jedis.lrange(INVITE_CODE_KEY, 0, -1);
 
         // 查找元素并输出
         boolean found = false;
         int CodeNumber = 0;
-        for (String inveitCode : inveitCodes) {
-            if (code.equals(inveitCode)) {
-                log.warn("找到该邀请码：" + inveitCode);
+        for (String inviteCode : inviteCodes) {
+            if (code.equals(inviteCode)) {
+                log.warn("找到该邀请码：" + inviteCode);
                 found = true;
                 log.warn("数值为：" + CodeNumber);
-                jedis.lrem(INVEIT_CODE_KEY, CodeNumber, code);
+                jedis.lrem(INVITE_CODE_KEY, CodeNumber, code);
                 break;
             }
             CodeNumber++;
@@ -90,14 +103,30 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
             throw new RepairException(ResultCodeEnum.REGISTER_MOBLE_ERROR);
         }
 
-        // 注册
-        Member member = new Member();
-        member.setNickname(nickname);
-        member.setMobile(mobile);
-        member.setPassword(MD5.encrypt(password));
-        member.setDisabled(false);
-        member.setAvatar("");
-        baseMapper.insert(member);
+        String lockKey = "inviteCode:" + registerVo.getCode();
+        RLock lock = redissonClient.getLock(lockKey);
+
+        try {
+            // 尝试获取分布式锁，最多等待 3 秒钟
+            if (lock.tryLock(5, TimeUnit.SECONDS)) {
+                boolean flag = MemberBloomFilter.contains(lockKey);
+                    if (!flag) {
+                        // 注册
+                        Member member = new Member();
+                        member.setNickname(nickname);
+                        member.setMobile(mobile);
+                        member.setPassword(MD5.encrypt(password));
+                        member.setDisabled(false);
+                        member.setAvatar("");
+                        baseMapper.insert(member);
+                        jedis.hset(lockKey, "used", "true");
+                    }
+            }
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        } finally {
+            lock.unlock();
+        }
     }
 
     @Override

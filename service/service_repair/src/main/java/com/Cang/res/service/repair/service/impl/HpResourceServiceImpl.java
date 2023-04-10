@@ -15,6 +15,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
@@ -136,6 +137,17 @@ public class HpResourceServiceImpl extends ServiceImpl<HpResourceMapper, HpResou
         List<ResourceVo> records =  baseMapper.selectPageByResourceQueryVo(pageParam,queryWrapper);
         return pageParam.setRecords(records);
     }
+
+    /*@Cacheable(value = "index", key = "'selectHotResource'")
+    @Override
+    public List<HpResource> selectHotResource() {
+
+        QueryWrapper<HpResource> queryWrapper = new QueryWrapper<>();
+        queryWrapper.orderByDesc("view_count");
+        queryWrapper.last("limit 8");
+
+        return baseMapper.selectList(queryWrapper);
+    }*/
 
     @Override
     public ResourcePublishVo getResourcePublishVoById(String id) {

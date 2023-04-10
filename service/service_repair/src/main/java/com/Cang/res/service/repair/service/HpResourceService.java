@@ -8,6 +8,8 @@ import com.Cang.res.service.repair.entity.vo.ResourceVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  * 资源 服务类
@@ -29,6 +31,8 @@ public interface HpResourceService extends IService<HpResource> {
     IPage<ResourceVo> selectPage(Long page, Long limit, ResourceQueryVo resourceQueryVo);
 
     ResourcePublishVo getResourcePublishVoById(String id);
+
+    //List<HpResource> selectHotResource();
 
     boolean publishResourceById(String id);
 }

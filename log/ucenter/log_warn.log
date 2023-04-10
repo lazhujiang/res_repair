@@ -1,0 +1,71 @@
+2023-03-25 15:54:15.186  WARN 16668 --- [http-nio-8120-exec-4] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：100028
+2023-03-25 15:54:15.188  WARN 16668 --- [http-nio-8120-exec-4] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：2
+2023-03-25 15:56:56.566  WARN 19556 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：025027
+2023-03-25 15:57:02.981  WARN 19556 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：2
+2023-03-25 16:36:53.444  WARN 34680 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberController': Unsatisfied dependency expressed through field 'memberService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.redisson.api.RedissonClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+2023-03-25 16:42:21.498  WARN 44604 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberController': Unsatisfied dependency expressed through field 'memberService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.redisson.api.RedissonClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+2023-03-25 16:43:29.066  WARN 29120 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberController': Unsatisfied dependency expressed through field 'memberService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.redisson.api.RedissonClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+2023-03-25 16:47:33.742  WARN 26100 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberController': Unsatisfied dependency expressed through field 'memberService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/Cang/res/service/base/config/RedissonConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: localhost/127.0.0.1:6389
+2023-03-25 16:51:54.544  WARN 30376 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberController': Unsatisfied dependency expressed through field 'memberService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redissonClient' defined in class path resource [com/Cang/res/service/base/config/RedissonConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redissonClient' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: localhost/127.0.0.1:6389
+2023-03-25 17:02:47.518  WARN 35676 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberController': Unsatisfied dependency expressed through field 'memberService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'redis.clients.jedis.Jedis' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+2023-03-25 17:06:06.002  WARN 20928 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 100217
+2023-03-25 17:06:55.167  WARN 2840 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 100217
+2023-03-25 17:07:56.662  WARN 2840 --- [http-nio-8120-exec-2] c.C.r.s.u.s.impl.MemberServiceImpl       : 100217
+2023-03-25 17:08:38.122  WARN 2840 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m496ms863µs100ns).
+2023-03-25 17:08:59.379  WARN 39484 --- [http-nio-8120-exec-2] c.C.r.s.u.s.impl.MemberServiceImpl       : 100217
+2023-03-25 17:08:59.388  WARN 39484 --- [http-nio-8120-exec-2] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：100217
+2023-03-25 17:08:59.388  WARN 39484 --- [http-nio-8120-exec-2] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：2
+2023-03-25 17:11:55.937  WARN 46256 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 100217
+2023-03-25 17:12:21.290  WARN 46256 --- [http-nio-8120-exec-5] c.C.r.s.u.s.impl.MemberServiceImpl       : 081624
+2023-03-25 17:12:21.291  WARN 46256 --- [http-nio-8120-exec-5] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：081624
+2023-03-25 17:12:21.292  WARN 46256 --- [http-nio-8120-exec-5] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：0
+2023-03-25 17:13:29.017  WARN 24732 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 230831
+2023-03-25 17:13:29.029  WARN 24732 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：230831
+2023-03-25 17:13:29.029  WARN 24732 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：0
+2023-03-25 17:14:14.230  WARN 25116 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 000716
+2023-03-25 17:14:14.257  WARN 25116 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：000716
+2023-03-25 17:14:14.258  WARN 25116 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：0
+2023-03-25 17:16:11.227  WARN 37852 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 125308
+2023-03-25 17:16:11.250  WARN 37852 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：125308
+2023-03-25 17:16:11.250  WARN 37852 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：0
+2023-03-25 17:17:26.220  WARN 37852 --- [http-nio-8120-exec-2] c.C.r.s.u.s.impl.MemberServiceImpl       : 090316
+2023-03-25 17:17:26.222  WARN 37852 --- [http-nio-8120-exec-2] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：090316
+2023-03-25 17:17:26.222  WARN 37852 --- [http-nio-8120-exec-2] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：0
+2023-03-25 17:18:38.604  WARN 37852 --- [http-nio-8120-exec-4] c.C.r.s.u.s.impl.MemberServiceImpl       : 105248
+2023-03-25 17:18:38.605  WARN 37852 --- [http-nio-8120-exec-4] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：105248
+2023-03-25 17:18:38.606  WARN 37852 --- [http-nio-8120-exec-4] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：0
+2023-03-25 17:20:57.512  WARN 37852 --- [http-nio-8120-exec-5] c.C.r.s.u.s.impl.MemberServiceImpl       : 105258
+2023-03-25 17:21:15.441  WARN 37852 --- [http-nio-8120-exec-7] c.C.r.s.u.s.impl.MemberServiceImpl       : 124736
+2023-03-25 17:21:15.442  WARN 37852 --- [http-nio-8120-exec-7] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：124736
+2023-03-25 17:21:15.442  WARN 37852 --- [http-nio-8120-exec-7] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：0
+2023-03-25 17:23:18.712  WARN 37852 --- [http-nio-8120-exec-6] c.C.r.s.u.s.impl.MemberServiceImpl       : 195226
+2023-03-25 17:23:18.714  WARN 37852 --- [http-nio-8120-exec-6] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：195226
+2023-03-25 17:23:18.714  WARN 37852 --- [http-nio-8120-exec-6] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：0
+2023-03-25 17:25:29.854  WARN 43404 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 230218
+2023-03-25 17:25:29.867  WARN 43404 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：230218
+2023-03-25 17:25:29.867  WARN 43404 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：0
+2023-03-25 17:27:30.344  WARN 14868 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 155445
+2023-03-25 17:27:41.647  WARN 14868 --- [http-nio-8120-exec-6] c.C.r.s.u.s.impl.MemberServiceImpl       : 182330
+2023-03-25 17:29:11.179  WARN 14868 --- [http-nio-8120-exec-9] c.C.r.s.u.s.impl.MemberServiceImpl       : 152641
+2023-03-25 17:29:36.130  WARN 14868 --- [http-nio-8120-exec-4] c.C.r.s.u.s.impl.MemberServiceImpl       : 141354
+2023-03-25 17:31:35.140  WARN 47736 --- [http-nio-8120-exec-6] c.C.r.s.u.s.impl.MemberServiceImpl       : 090526
+2023-03-25 17:31:35.158  WARN 47736 --- [http-nio-8120-exec-6] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：090526
+2023-03-25 17:31:35.158  WARN 47736 --- [http-nio-8120-exec-6] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：4
+2023-03-25 17:34:39.103  WARN 41136 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 141354
+2023-03-25 17:34:39.112  WARN 41136 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：141354
+2023-03-25 17:34:39.112  WARN 41136 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：1
+2023-03-25 17:35:46.220  WARN 16288 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 205024
+2023-03-25 17:35:46.249  WARN 16288 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：205024
+2023-03-25 17:35:46.250  WARN 16288 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：2
+2023-03-25 17:38:48.207  WARN 48096 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 213226
+2023-03-25 17:38:48.218  WARN 48096 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：213226
+2023-03-25 17:38:48.218  WARN 48096 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：1
+2023-03-25 17:42:07.919  WARN 33192 --- [http-nio-8120-exec-3] c.C.r.s.u.s.impl.MemberServiceImpl       : 152641
+2023-03-25 17:42:07.938  WARN 33192 --- [http-nio-8120-exec-3] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：152641
+2023-03-25 17:42:07.938  WARN 33192 --- [http-nio-8120-exec-3] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：0
+2023-03-25 17:45:00.515  WARN 33192 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m52s506ms133µs100ns).
+2023-03-25 17:50:23.911  WARN 44496 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberController': Unsatisfied dependency expressed through field 'memberService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'memberServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.redisson.api.RBloomFilter<?>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup="", name="", description="", authenticationType=CONTAINER, type=java.lang.Object.class, mappedName="")}
+2023-03-25 17:53:45.606  WARN 44548 --- [http-nio-8120-exec-1] c.C.r.s.u.s.impl.MemberServiceImpl       : 152641
+2023-03-25 17:54:06.622  WARN 44548 --- [http-nio-8120-exec-4] c.C.r.s.u.s.impl.MemberServiceImpl       : 105130
+2023-03-25 17:54:06.624  WARN 44548 --- [http-nio-8120-exec-4] c.C.r.s.u.s.impl.MemberServiceImpl       : 找到该邀请码：105130
+2023-03-25 17:54:06.624  WARN 44548 --- [http-nio-8120-exec-4] c.C.r.s.u.s.impl.MemberServiceImpl       : 数值为：0

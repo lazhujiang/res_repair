@@ -3,6 +3,7 @@ package com.Cang.res.service.repair.entity.vo;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @Date:2023/3/11 17:35
@@ -14,9 +15,14 @@ public class ResourceVo implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String id;
+    private String categoryId;
+    private String categoryParentId;
     private String title;
-    private String categoryParentTitle;
-    private String categoryTitle;
     private String cover;
-    private String gmtCreate;
+    private Long version;
+    private String status;
+    private String description;
+    private Date gmtCreate;
+    private Date gmtModified;
+
 }

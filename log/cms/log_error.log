@@ -1,522 +1,4 @@
-2023-04-10 09:55:27.301 ERROR 31152 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8140 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8140 or configure this application to listen on another port.
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-20] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x44043d09, L:/127.0.0.1:56409 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-18] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xeb33eac1, L:/127.0.0.1:56411 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-6] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xcb1b3869, L:/127.0.0.1:56408 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-9] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xf941e7d7, L:/127.0.0.1:56421 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-21] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x045d8925, L:/127.0.0.1:56414 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-12] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x1bf40e67, L:/127.0.0.1:56420 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-13] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xd7ccb190, L:/127.0.0.1:56412 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-25] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xd0812c76, L:/127.0.0.1:56423 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-26] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb2dacc95, L:/127.0.0.1:56430 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-14] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xdbc80814, L:/127.0.0.1:56427 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-5] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xae37fb6d, L:/127.0.0.1:56416 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-17] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x6f9a000d, L:/127.0.0.1:56415 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-10] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x76259781, L:/127.0.0.1:56419 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-15] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x2a28a4bc, L:/127.0.0.1:56410 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-4] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x42d32fae, L:/127.0.0.1:56424 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.395 ERROR 31152 --- [redisson-netty-2-27] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xda5b4b28, L:/127.0.0.1:56432 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.504 ERROR 31152 --- [redisson-netty-2-16] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb6c74588, L:/127.0.0.1:56418 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.504 ERROR 31152 --- [redisson-netty-2-7] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x1778ff33, L:/127.0.0.1:56425 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.504 ERROR 31152 --- [redisson-netty-2-22] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x301a87f7, L:/127.0.0.1:56413 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.504 ERROR 31152 --- [redisson-netty-2-8] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x834f8987, L:/127.0.0.1:56426 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.504 ERROR 31152 --- [redisson-netty-2-3] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x7f499f9d, L:/127.0.0.1:56429 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.504 ERROR 31152 --- [redisson-netty-2-23] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb06799fe, L:/127.0.0.1:56431 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.504 ERROR 31152 --- [redisson-netty-2-24] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x1da018c1, L:/127.0.0.1:56422 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.504 ERROR 31152 --- [redisson-netty-2-19] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x287f7fc1, L:/127.0.0.1:56428 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:55:27.504 ERROR 31152 --- [redisson-netty-2-11] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x61d1faa9, L:/127.0.0.1:56417 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.759 ERROR 15388 --- [redisson-netty-4-20] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x37a81ef0, L:/127.0.0.1:60720 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -538,7 +20,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-9] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x9e974d54, L:/127.0.0.1:56321 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.744 ERROR 15388 --- [redisson-netty-4-14] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x685d7e13, L:/127.0.0.1:60714 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -559,7 +41,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-24] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xc32280aa, L:/127.0.0.1:56335 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.744 ERROR 15388 --- [redisson-netty-4-24] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x3d3ffbd7, L:/127.0.0.1:60719 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -580,7 +62,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-10] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x998ae18c, L:/127.0.0.1:56316 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.744 ERROR 15388 --- [redisson-netty-4-3] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x7e401fba, L:/127.0.0.1:60716 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -601,7 +83,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-7] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xde85f189, L:/127.0.0.1:56327 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.790 ERROR 15388 --- [redisson-netty-4-18] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x3b75b033, L:/127.0.0.1:60715 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -622,7 +104,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-18] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x1d4b58d3, L:/127.0.0.1:56330 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.790 ERROR 15388 --- [redisson-netty-4-23] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xa9236bc1, L:/127.0.0.1:60731 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -643,7 +125,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-8] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x1dd01209, L:/127.0.0.1:56325 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.790 ERROR 15388 --- [redisson-netty-4-17] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x2ba14044, L:/127.0.0.1:60718 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -664,7 +146,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-22] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xbbb8f458, L:/127.0.0.1:56334 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.744 ERROR 15388 --- [redisson-netty-4-12] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x9dd1d37e, L:/127.0.0.1:60725 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -685,7 +167,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-11] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x0c8e9668, L:/127.0.0.1:56319 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.790 ERROR 15388 --- [redisson-netty-4-4] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xf52d0fe6, L:/127.0.0.1:60723 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -706,7 +188,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-21] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb9888319, L:/127.0.0.1:56328 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.790 ERROR 15388 --- [redisson-netty-4-26] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xcb1696eb, L:/127.0.0.1:60728 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -727,7 +209,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-15] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x3c237c42, L:/127.0.0.1:56323 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.790 ERROR 15388 --- [redisson-netty-4-8] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb18de9cf, L:/127.0.0.1:60722 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -748,7 +230,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-12] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x8c976c97, L:/127.0.0.1:56337 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.790 ERROR 15388 --- [redisson-netty-4-22] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x3cf07bba, L:/127.0.0.1:60710 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -769,7 +251,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-13] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x5ffdc296, L:/127.0.0.1:56314 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.790 ERROR 15388 --- [redisson-netty-4-19] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x9ead7c8a, L:/127.0.0.1:60724 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -790,7 +272,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-23] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x08297e2a, L:/127.0.0.1:56326 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.759 ERROR 15388 --- [redisson-netty-4-25] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x74ee8bea, L:/127.0.0.1:60709 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -811,7 +293,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-5] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xee18359e, L:/127.0.0.1:56333 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.790 ERROR 15388 --- [redisson-netty-4-5] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x13895cba, L:/127.0.0.1:60732 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -832,7 +314,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-25] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xac8b2a44, L:/127.0.0.1:56315 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.900 ERROR 15388 --- [redisson-netty-4-27] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x8dbf66c0, L:/127.0.0.1:60711 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -853,7 +335,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-14] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x1c654e59, L:/127.0.0.1:56322 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.900 ERROR 15388 --- [redisson-netty-4-16] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x424675cb, L:/127.0.0.1:60730 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -874,7 +356,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-26] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x6194a380, L:/127.0.0.1:56317 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.900 ERROR 15388 --- [redisson-netty-4-10] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x216be3ae, L:/127.0.0.1:60717 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -895,7 +377,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-19] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x694d170a, L:/127.0.0.1:56331 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.900 ERROR 15388 --- [redisson-netty-4-6] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x897586d9, L:/127.0.0.1:60729 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -916,7 +398,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-20] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x8f588ce0, L:/127.0.0.1:56324 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.900 ERROR 15388 --- [redisson-netty-4-13] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb2cbe92d, L:/127.0.0.1:60708 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -937,7 +419,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-27] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xe02bfd58, L:/127.0.0.1:56338 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.900 ERROR 15388 --- [redisson-netty-4-7] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x1d5cba7b, L:/127.0.0.1:60726 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -958,7 +440,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-3] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x6f3222fa, L:/127.0.0.1:56336 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.900 ERROR 15388 --- [redisson-netty-4-15] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xd6c4d185, L:/127.0.0.1:60713 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -979,7 +461,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:16.967 ERROR 28444 --- [redisson-netty-2-4] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x973f71e0, L:/127.0.0.1:56329 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.900 ERROR 15388 --- [redisson-netty-4-11] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x74eac3e8, L:/127.0.0.1:60727 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1000,7 +482,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:17.076 ERROR 28444 --- [redisson-netty-2-16] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x819b900e, L:/127.0.0.1:56318 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.900 ERROR 15388 --- [redisson-netty-4-9] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x672a6533, L:/127.0.0.1:60721 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1021,7 +503,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:17.076 ERROR 28444 --- [redisson-netty-2-17] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xbcc379ef, L:/127.0.0.1:56320 - R:localhost/127.0.0.1:6379]
+2023-05-15 08:57:17.900 ERROR 15388 --- [redisson-netty-4-21] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x92943756, L:/127.0.0.1:60712 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1042,7 +524,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:56:17.076 ERROR 28444 --- [redisson-netty-2-6] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x3cad4861, L:/127.0.0.1:56332 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.763 ERROR 58304 --- [redisson-netty-4-11] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x4f3de708, L:/127.0.0.1:61935 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1063,7 +545,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-24] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb71f3262, L:/127.0.0.1:56536 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.779 ERROR 58304 --- [redisson-netty-4-8] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x75994b6f, L:/127.0.0.1:61930 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1084,7 +566,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-16] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x6605939c, L:/127.0.0.1:56550 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.779 ERROR 58304 --- [redisson-netty-4-4] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xc7ca02af, L:/127.0.0.1:61932 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1105,7 +587,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-19] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x13540292, L:/127.0.0.1:56530 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.841 ERROR 58304 --- [redisson-netty-4-3] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xa4749071, L:/127.0.0.1:61944 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1126,7 +608,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-13] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x10d012e5, L:/127.0.0.1:56551 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.841 ERROR 58304 --- [redisson-netty-4-20] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x523804c2, L:/127.0.0.1:61940 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1147,7 +629,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-22] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xc0ba9b72, L:/127.0.0.1:56538 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.841 ERROR 58304 --- [redisson-netty-4-27] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x8342c396, L:/127.0.0.1:61920 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1168,7 +650,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-27] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xcc9f81f5, L:/127.0.0.1:56552 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.779 ERROR 58304 --- [redisson-netty-4-19] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x093f63c7, L:/127.0.0.1:61938 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1189,7 +671,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-3] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x7ba8a564, L:/127.0.0.1:56535 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.873 ERROR 58304 --- [redisson-netty-4-22] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xe0d644be, L:/127.0.0.1:61925 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1210,7 +692,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-21] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xc535d972, L:/127.0.0.1:56532 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.841 ERROR 58304 --- [redisson-netty-4-12] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x92a37a3a, L:/127.0.0.1:61936 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1231,7 +713,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-18] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xfd8da2d8, L:/127.0.0.1:56543 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.873 ERROR 58304 --- [redisson-netty-4-17] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xc84bac87, L:/127.0.0.1:61929 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1252,91 +734,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-14] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x34c28605, L:/127.0.0.1:56533 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-4] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x5d5dae77, L:/127.0.0.1:56545 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-17] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x60d41306, L:/127.0.0.1:56544 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-5] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x40bf0930, L:/127.0.0.1:56541 - R:localhost/127.0.0.1:6379]
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-6] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x71338897, L:/127.0.0.1:56542 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.873 ERROR 58304 --- [redisson-netty-4-7] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x4dc098df, L:/127.0.0.1:61922 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1358,7 +756,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-10] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x8740892c, L:/127.0.0.1:56539 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.888 ERROR 58304 --- [redisson-netty-4-24] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x4f8a3593, L:/127.0.0.1:61923 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1379,7 +777,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-23] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xa12dd46c, L:/127.0.0.1:56540 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.873 ERROR 58304 --- [redisson-netty-4-15] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x9553d58b, L:/127.0.0.1:61942 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1400,7 +798,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-15] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x325b4438, L:/127.0.0.1:56534 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.873 ERROR 58304 --- [redisson-netty-4-9] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xbd8372a4, L:/127.0.0.1:61937 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1421,7 +819,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-20] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xa50e201f, L:/127.0.0.1:56531 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.888 ERROR 58304 --- [redisson-netty-4-10] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xf252c7d2, L:/127.0.0.1:61943 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1442,7 +840,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-11] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x126576c4, L:/127.0.0.1:56537 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.888 ERROR 58304 --- [redisson-netty-4-25] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x951c79a8, L:/127.0.0.1:61926 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1463,7 +861,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.302 ERROR 5488 --- [redisson-netty-2-9] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x3fceafb4, L:/127.0.0.1:56548 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.794 ERROR 58304 --- [redisson-netty-4-16] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x7bd56501, L:/127.0.0.1:61921 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1484,7 +882,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.396 ERROR 5488 --- [redisson-netty-2-7] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x024e1726, L:/127.0.0.1:56529 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.794 ERROR 58304 --- [redisson-netty-4-21] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x2843a149, L:/127.0.0.1:61928 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1505,7 +903,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.396 ERROR 5488 --- [redisson-netty-2-25] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb42f9b77, L:/127.0.0.1:56549 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.779 ERROR 58304 --- [redisson-netty-4-23] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xa4dc67f6, L:/127.0.0.1:61927 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1526,7 +924,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.396 ERROR 5488 --- [redisson-netty-2-8] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xe481fa40, L:/127.0.0.1:56528 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.779 ERROR 58304 --- [redisson-netty-4-5] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xac7792eb, L:/127.0.0.1:61939 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1547,7 +945,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.396 ERROR 5488 --- [redisson-netty-2-26] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xc455729a, L:/127.0.0.1:56546 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.873 ERROR 58304 --- [redisson-netty-4-13] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x4c2c3776, L:/127.0.0.1:61941 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1568,7 +966,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 09:58:31.396 ERROR 5488 --- [redisson-netty-2-12] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x8876f0f7, L:/127.0.0.1:56547 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.888 ERROR 58304 --- [redisson-netty-4-14] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x7d58a85d, L:/127.0.0.1:61931 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1589,102 +987,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 18:57:23.770 ERROR 35544 --- [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'apiAdController': Unsatisfied dependency expressed through field 'adService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.Cang.res.service.cms.mapper.AdMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.Cang.res.service.cms.ServiceCmsApplication.main(ServiceCmsApplication.java:16)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.Cang.res.service.cms.mapper.AdMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
-	... 19 common frames omitted
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.Cang.res.service.cms.mapper.AdMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1695)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1253)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
-	... 32 common frames omitted
-
-2023-04-10 18:58:03.742 ERROR 37632 --- [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apiAdController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.Cang.res.service.cms.mapper.AdMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:337)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
-	at com.Cang.res.service.cms.ServiceCmsApplication.main(ServiceCmsApplication.java:16)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.Cang.res.service.cms.mapper.AdMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1287)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:537)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:513)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:653)
-	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:224)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:334)
-	... 17 common frames omitted
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.Cang.res.service.cms.mapper.AdMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1695)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1253)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
-	... 35 common frames omitted
-
-2023-04-10 19:45:42.458 ERROR 25264 --- [redisson-netty-4-8] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xa7dd0d65, L:/127.0.0.1:59944 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.888 ERROR 58304 --- [redisson-netty-4-6] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xaf214747, L:/127.0.0.1:61933 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1705,7 +1008,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.458 ERROR 25264 --- [redisson-netty-4-14] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x34532730, L:/127.0.0.1:59941 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.888 ERROR 58304 --- [redisson-netty-4-18] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x01200a9b, L:/127.0.0.1:61924 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1726,7 +1029,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.458 ERROR 25264 --- [redisson-netty-4-7] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x87798682, L:/127.0.0.1:59943 - R:localhost/127.0.0.1:6379]
+2023-05-15 10:02:57.888 ERROR 58304 --- [redisson-netty-4-26] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xd51926e5, L:/127.0.0.1:61934 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1747,7 +1050,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.458 ERROR 25264 --- [redisson-netty-4-6] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xdb4e6582, L:/127.0.0.1:59948 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.622 ERROR 57664 --- [redisson-netty-4-14] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x2ff09b33, L:/127.0.0.1:58508 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1768,7 +1071,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.458 ERROR 25264 --- [redisson-netty-4-16] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x13bc8b76, L:/127.0.0.1:59945 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.622 ERROR 57664 --- [redisson-netty-4-25] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x8b2d0066, L:/127.0.0.1:58485 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1789,7 +1092,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.458 ERROR 25264 --- [redisson-netty-4-27] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xabbc7d11, L:/127.0.0.1:59928 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.622 ERROR 57664 --- [redisson-netty-4-18] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x42b69552, L:/127.0.0.1:58486 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1810,7 +1113,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-3] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xbfb32eca, L:/127.0.0.1:59926 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.622 ERROR 57664 --- [redisson-netty-4-24] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x04dff53c, L:/127.0.0.1:58499 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1831,7 +1134,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-22] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x499a9456, L:/127.0.0.1:59938 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.622 ERROR 57664 --- [redisson-netty-4-9] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x6cc2e326, L:/127.0.0.1:58496 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1852,7 +1155,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-5] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x975c0d66, L:/127.0.0.1:59946 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.622 ERROR 57664 --- [redisson-netty-4-11] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x9b7b38b7, L:/127.0.0.1:58506 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1873,7 +1176,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-10] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xba4ebe65, L:/127.0.0.1:59939 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.622 ERROR 57664 --- [redisson-netty-4-17] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x85476609, L:/127.0.0.1:58498 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1894,7 +1197,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-18] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xe598d1c9, L:/127.0.0.1:59949 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.622 ERROR 57664 --- [redisson-netty-4-5] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x7df48369, L:/127.0.0.1:58494 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1915,7 +1218,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-4] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x560caf68, L:/127.0.0.1:59937 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.622 ERROR 57664 --- [redisson-netty-4-16] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xea4f39a7, L:/127.0.0.1:58491 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1936,7 +1239,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-17] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x2abea827, L:/127.0.0.1:59936 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-10] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xf2e963b3, L:/127.0.0.1:58501 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1957,7 +1260,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-9] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x5dacf951, L:/127.0.0.1:59940 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-7] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xd3e80a0f, L:/127.0.0.1:58503 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1978,7 +1281,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-11] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x74c6be99, L:/127.0.0.1:59934 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-22] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xebcc59b6, L:/127.0.0.1:58500 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -1999,7 +1302,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-15] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xfe758625, L:/127.0.0.1:59932 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-19] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x49d36281, L:/127.0.0.1:58502 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2020,7 +1323,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-24] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x4399ae72, L:/127.0.0.1:59931 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-26] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x12279532, L:/127.0.0.1:58488 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2041,7 +1344,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-25] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb34ef873, L:/127.0.0.1:59929 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-8] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x379b9886, L:/127.0.0.1:58490 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2062,7 +1365,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-19] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb6719add, L:/127.0.0.1:59947 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-12] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xa74f2abb, L:/127.0.0.1:58504 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2083,7 +1386,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-21] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x054bd372, L:/127.0.0.1:59925 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-23] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x937b26f8, L:/127.0.0.1:58507 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2104,7 +1407,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-23] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xca89e29e, L:/127.0.0.1:59930 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-20] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x6d5e3ad8, L:/127.0.0.1:58505 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2125,7 +1428,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-13] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xea7b5c06, L:/127.0.0.1:59933 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-15] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x7b180649, L:/127.0.0.1:58495 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2146,7 +1449,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-26] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x52dc8512, L:/127.0.0.1:59942 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-21] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x42e7ab98, L:/127.0.0.1:58493 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2167,7 +1470,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-12] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xf91c23b8, L:/127.0.0.1:59927 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-13] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x44e9da87, L:/127.0.0.1:58497 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2188,7 +1491,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:45:42.498 ERROR 25264 --- [redisson-netty-4-20] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xe950708b, L:/127.0.0.1:59935 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-4] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x4862ab87, L:/127.0.0.1:58492 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2209,7 +1512,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.738 ERROR 32256 --- [redisson-netty-4-19] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x604ddd97, L:/127.0.0.1:61697 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-3] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x0288788f, L:/127.0.0.1:58509 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2230,7 +1533,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.738 ERROR 32256 --- [redisson-netty-4-22] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x4ca5ef1d, L:/127.0.0.1:61689 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.745 ERROR 57664 --- [redisson-netty-4-27] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x47888103, L:/127.0.0.1:58489 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2251,7 +1554,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.738 ERROR 32256 --- [redisson-netty-4-21] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x54b587ff, L:/127.0.0.1:61709 - R:localhost/127.0.0.1:6379]
+2023-05-15 18:33:45.755 ERROR 57664 --- [redisson-netty-4-6] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x93e94657, L:/127.0.0.1:58487 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2272,7 +1575,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.738 ERROR 32256 --- [redisson-netty-4-8] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x481fa2a6, L:/127.0.0.1:61707 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.945 ERROR 61348 --- [redisson-netty-4-14] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xc968aa17, L:/127.0.0.1:52402 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2293,7 +1596,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.738 ERROR 32256 --- [redisson-netty-4-7] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x1458501b, L:/127.0.0.1:61694 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.945 ERROR 61348 --- [redisson-netty-4-17] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x68041f00, L:/127.0.0.1:52414 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2314,7 +1617,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.738 ERROR 32256 --- [redisson-netty-4-4] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xe3e3a97a, L:/127.0.0.1:61687 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.945 ERROR 61348 --- [redisson-netty-4-21] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x26b2237e, L:/127.0.0.1:52404 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2335,7 +1638,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.738 ERROR 32256 --- [redisson-netty-4-14] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x5c7f2cd9, L:/127.0.0.1:61693 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.945 ERROR 61348 --- [redisson-netty-4-22] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xa590535d, L:/127.0.0.1:52411 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2356,7 +1659,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.738 ERROR 32256 --- [redisson-netty-4-24] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x978c6253, L:/127.0.0.1:61690 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.945 ERROR 61348 --- [redisson-netty-4-16] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x6b7cafd4, L:/127.0.0.1:52420 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2377,7 +1680,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.738 ERROR 32256 --- [redisson-netty-4-15] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x1a6d7db4, L:/127.0.0.1:61696 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.945 ERROR 61348 --- [redisson-netty-4-24] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xce06d0cc, L:/127.0.0.1:52416 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2398,7 +1701,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.753 ERROR 32256 --- [redisson-netty-4-13] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x956aa64f, L:/127.0.0.1:61688 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.945 ERROR 61348 --- [redisson-netty-4-10] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x4d58683b, L:/127.0.0.1:52419 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2419,7 +1722,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.753 ERROR 32256 --- [redisson-netty-4-16] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x9de9c106, L:/127.0.0.1:61703 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.995 ERROR 61348 --- [redisson-netty-4-25] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xdcc56ddf, L:/127.0.0.1:52418 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2440,7 +1743,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.753 ERROR 32256 --- [redisson-netty-4-25] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x2c7d34f2, L:/127.0.0.1:61692 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.996 ERROR 61348 --- [redisson-netty-4-9] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x4f5e93ec, L:/127.0.0.1:52408 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2461,7 +1764,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.753 ERROR 32256 --- [redisson-netty-4-5] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x60c52c92, L:/127.0.0.1:61704 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.995 ERROR 61348 --- [redisson-netty-4-26] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x09c6251c, L:/127.0.0.1:52421 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2482,7 +1785,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.753 ERROR 32256 --- [redisson-netty-4-17] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x504f8693, L:/127.0.0.1:61698 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.995 ERROR 61348 --- [redisson-netty-4-12] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x79056bbc, L:/127.0.0.1:52403 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2503,7 +1806,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.753 ERROR 32256 --- [redisson-netty-4-26] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x44b7980d, L:/127.0.0.1:61708 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.997 ERROR 61348 --- [redisson-netty-4-7] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xaa2d69b6, L:/127.0.0.1:52409 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2524,7 +1827,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.753 ERROR 32256 --- [redisson-netty-4-6] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x101a7ec0, L:/127.0.0.1:61700 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.997 ERROR 61348 --- [redisson-netty-4-13] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x55f01b47, L:/127.0.0.1:52401 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2545,7 +1848,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.763 ERROR 32256 --- [redisson-netty-4-9] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x81a65cf7, L:/127.0.0.1:61705 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.997 ERROR 61348 --- [redisson-netty-4-27] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb01e4032, L:/127.0.0.1:52423 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2566,7 +1869,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.753 ERROR 32256 --- [redisson-netty-4-27] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb02c989d, L:/127.0.0.1:61685 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.997 ERROR 61348 --- [redisson-netty-4-11] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x1dfd422d, L:/127.0.0.1:52422 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2587,7 +1890,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.753 ERROR 32256 --- [redisson-netty-4-23] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xeab247c4, L:/127.0.0.1:61691 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.998 ERROR 61348 --- [redisson-netty-4-5] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x9281632e, L:/127.0.0.1:52405 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2608,7 +1911,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.753 ERROR 32256 --- [redisson-netty-4-18] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x42d0c590, L:/127.0.0.1:61695 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.998 ERROR 61348 --- [redisson-netty-4-4] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x386e0dce, L:/127.0.0.1:52399 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2629,7 +1932,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.753 ERROR 32256 --- [redisson-netty-4-10] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xacbb6b81, L:/127.0.0.1:61686 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.999 ERROR 61348 --- [redisson-netty-4-3] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xedb50bcf, L:/127.0.0.1:52400 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2650,7 +1953,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.753 ERROR 32256 --- [redisson-netty-4-11] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x740a6e9f, L:/127.0.0.1:61701 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.999 ERROR 61348 --- [redisson-netty-4-19] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x9faaa13b, L:/127.0.0.1:52407 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2671,7 +1974,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.863 ERROR 32256 --- [redisson-netty-4-20] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x6c131392, L:/127.0.0.1:61699 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.999 ERROR 61348 --- [redisson-netty-4-6] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x0b9f3111, L:/127.0.0.1:52412 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2692,7 +1995,7 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.863 ERROR 32256 --- [redisson-netty-4-12] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x869140c6, L:/127.0.0.1:61702 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.999 ERROR 61348 --- [redisson-netty-4-23] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xc3d58f7a, L:/127.0.0.1:52417 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -2713,7 +2016,70 @@ java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈�
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:844)
 
-2023-04-10 19:46:44.863 ERROR 32256 --- [redisson-netty-4-3] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xb420c6de, L:/127.0.0.1:61706 - R:localhost/127.0.0.1:6379]
+2023-05-15 19:46:15.999 ERROR 61348 --- [redisson-netty-4-18] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0xbf91ef85, L:/127.0.0.1:52406 - R:localhost/127.0.0.1:6379]
+
+java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+2023-05-15 19:46:16.004 ERROR 61348 --- [redisson-netty-4-20] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x10bc0f07, L:/127.0.0.1:52415 - R:localhost/127.0.0.1:6379]
+
+java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+2023-05-15 19:46:16.004 ERROR 61348 --- [redisson-netty-4-15] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x3a8c8443, L:/127.0.0.1:52410 - R:localhost/127.0.0.1:6379]
+
+java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+2023-05-15 19:46:16.004 ERROR 61348 --- [redisson-netty-4-8] o.redisson.client.handler.CommandsQueue  : Exception occured. Channel: [id: 0x491e85ac, L:/127.0.0.1:52413 - R:localhost/127.0.0.1:6379]
 
 java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
 	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)

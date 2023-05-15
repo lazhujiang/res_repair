@@ -9,6 +9,7 @@ import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -31,4 +32,6 @@ public interface HpResourceMapper extends BaseMapper<HpResource> {
             @Param(Constants.WRAPPER) QueryWrapper<ResourceVo> queryWrapper);
 
     ResourcePublishVo selectResourcePublishVoById(String id);
+
+    List<ResourceVo> selectHpResourceWithDescription();
 }

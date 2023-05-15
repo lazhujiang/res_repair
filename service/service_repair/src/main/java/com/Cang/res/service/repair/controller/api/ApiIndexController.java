@@ -2,6 +2,7 @@ package com.Cang.res.service.repair.controller.api;
 
 import com.Cang.res.common.base.result.R;
 import com.Cang.res.service.repair.entity.HpResource;
+import com.Cang.res.service.repair.entity.vo.ResourceVo;
 import com.Cang.res.service.repair.service.HpResourceService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -21,16 +22,19 @@ public class ApiIndexController {
     @Autowired
     private HpResourceService resourceService;
 
-    /*// 查询热门课程
-    @ApiOperation("课程和讲师的首页数据")
+    // 查询最新资源
+    @ApiOperation("最新资源的首页数据")
     @GetMapping
     public R index() {
 
         // 查询热门课程
-        List<HpResource> resourceList =  resourceService.selectHotResource();
+        List<ResourceVo> resourceList =  resourceService.selectNewResource();
+        for (ResourceVo resourceVo : resourceList) {
+            System.out.println(resourceVo);
+        }
 
         return R.ok().data("resourceList",resourceList);
-    }*/
+    }
 
 
 }

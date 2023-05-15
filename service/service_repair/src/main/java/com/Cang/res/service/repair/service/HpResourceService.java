@@ -32,7 +32,7 @@ public interface HpResourceService extends IService<HpResource> {
 
     ResourcePublishVo getResourcePublishVoById(String id);
 
-    //List<HpResource> selectHotResource();
-
     boolean publishResourceById(String id);
+
+    List<ResourceVo> selectNewResource();
 }

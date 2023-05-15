@@ -35,4 +35,22 @@
         <include refid="tables" />
         WHERE c.id = #{id}
     </select>
+    <select id="selectHpResourceWithDescription"
+            resultType="com.Cang.res.service.repair.entity.vo.ResourceVo">
+        SELECT
+            hr.id,
+            hr.title,
+            hrd.gmt_modified,
+            hrd.description
+        FROM
+            hp_resource hr
+        JOIN
+            hp_resource_description hrd
+        ON
+            hr.id = hrd.id
+        ORDER BY
+            hr.gmt_modified
+        DESC
+            LIMIT 8;
+    </select>
 </mapper>

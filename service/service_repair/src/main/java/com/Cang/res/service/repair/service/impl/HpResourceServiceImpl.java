@@ -160,4 +160,18 @@ public class HpResourceServiceImpl extends ServiceImpl<HpResourceMapper, HpResou
         resource.setId(id);
         return this.updateById(resource);
     }
+
+    @Cacheable(value = "index", key = "'selectNewResource'")
+    @Override
+    public List<ResourceVo> selectNewResource() {
+
+        /*QueryWrapper<HpResource> queryWrapper = new QueryWrapper<>();
+        queryWrapper.orderByDesc("gmt_modified");
+        queryWrapper.last("limit 8");
+
+        return baseMapper.selectList(queryWrapper);*/
+
+        //return baseMapper.selectHpResourceWithDescription();
+        return baseMapper.selectHpResourceWithDescription();
+    }
 }

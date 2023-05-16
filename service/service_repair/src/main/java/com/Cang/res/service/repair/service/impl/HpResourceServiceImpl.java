@@ -6,6 +6,7 @@ import com.Cang.res.service.repair.entity.form.ResourceInfoForm;
 import com.Cang.res.service.repair.entity.vo.ResourcePublishVo;
 import com.Cang.res.service.repair.entity.vo.ResourceQueryVo;
 import com.Cang.res.service.repair.entity.vo.ResourceVo;
+import com.Cang.res.service.repair.entity.vo.WebResourceVo;
 import com.Cang.res.service.repair.mapper.HpResourceDescriptionMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.Cang.res.service.repair.mapper.HpResourceMapper;
@@ -101,7 +102,7 @@ public class HpResourceServiceImpl extends ServiceImpl<HpResourceMapper, HpResou
     public boolean removeResourceById(String id) {
         // 章节信息：chapter
         //QueryWrapper<Chapter> chapterQueryWrapper = new QueryWrapper<>();
-        //courseCollectQueryWrapper.eq("course_id",id);
+        //resourceCollectQueryWrapper.eq("resource_id",id);
         //chapterMapper.delete(chapterQueryWrapper);
 
         // 课程详情信息：resource_description
@@ -173,5 +174,12 @@ public class HpResourceServiceImpl extends ServiceImpl<HpResourceMapper, HpResou
 
         //return baseMapper.selectHpResourceWithDescription();
         return baseMapper.selectHpResourceWithDescription();
+    }
+
+    @Transactional(rollbackFor = Exception.class)
+    @Override
+    public WebResourceVo selectWebResourceVoById(String id) {
+        // 获取课程信息
+        return baseMapper.selectWebResourceVoById(id);
     }
 }

@@ -53,4 +53,24 @@
         DESC
             LIMIT 8;
     </select>
+    <select id="selectWebResourceVoById" resultType="com.Cang.res.service.repair.entity.vo.WebResourceVo">
+        SELECT
+            c.id,
+            c.title,
+            c.cover,
+            cd.description,
+
+            s1.id AS categoryLevelOneId,
+            s1.title AS categoryLevelOne,
+            s2.id AS categoryLevelTwoId,
+            s2.title AS categoryLevelTwo
+
+        FROM
+            hp_resource c
+                LEFT JOIN hp_resource_description cd ON c.id = cd.id
+                LEFT JOIN hp_category s1 ON c.category_parent_id = s1.id
+                LEFT JOIN hp_category s2 ON c.category_id = s2.id
+        WHERE
+            c.id = #{id}
+    </select>
 </mapper>

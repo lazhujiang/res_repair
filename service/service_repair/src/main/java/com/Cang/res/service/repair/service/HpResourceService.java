@@ -5,6 +5,7 @@ import com.Cang.res.service.repair.entity.form.ResourceInfoForm;
 import com.Cang.res.service.repair.entity.vo.ResourcePublishVo;
 import com.Cang.res.service.repair.entity.vo.ResourceQueryVo;
 import com.Cang.res.service.repair.entity.vo.ResourceVo;
+import com.Cang.res.service.repair.entity.vo.WebResourceVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -35,4 +36,11 @@ public interface HpResourceService extends IService<HpResource> {
     boolean publishResourceById(String id);
 
     List<ResourceVo> selectNewResource();
+
+    /**
+     * 获取课程信息
+     * @param id
+     * @return
+     */
+    WebResourceVo selectWebResourceVoById(String id);
 }

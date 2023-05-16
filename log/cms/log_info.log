@@ -1,162 +1,105 @@
-2023-05-15 08:47:48.394  INFO 15388 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Starting ServiceCmsApplication on Cang with PID 15388 (D:\ArtWork\Java代码库\res_repair\service\service_cms\target\classes started by Cang in D:\ArtWork\Java代码库\res_repair)
-2023-05-15 08:47:48.394  INFO 15388 --- [main] c.C.r.service.cms.ServiceCmsApplication  : The following profiles are active: dev
-2023-05-15 08:47:49.616  INFO 15388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-05-15 08:47:49.616  INFO 15388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-05-15 08:47:49.679  INFO 15388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
-2023-05-15 08:47:50.210  INFO 15388 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-05-15 08:47:50.567  INFO 15388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8140 (http)
-2023-05-15 08:47:50.582  INFO 15388 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-15 08:47:50.582  INFO 15388 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2023-05-15 08:47:50.582  INFO 15388 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2023-05-15 08:47:50.582  INFO 15388 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2023-05-15 08:47:50.582  INFO 15388 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2023-05-15 08:47:50.582  INFO 15388 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-15 08:47:51.677  INFO 15388 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2023-05-15 08:47:51.817  INFO 15388 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-15 08:47:51.817  INFO 15388 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3376 ms
-2023-05-15 08:47:53.692  INFO 15388 --- [main] org.redisson.Version                     : Redisson 3.11.2
-2023-05-15 08:47:55.865  INFO 15388 --- [redisson-netty-4-28] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for localhost/127.0.0.1:6379
-2023-05-15 08:47:55.865  INFO 15388 --- [redisson-netty-4-20] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for localhost/127.0.0.1:6379
-2023-05-15 08:47:56.287  INFO 15388 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-05-15 08:47:56.397  INFO 15388 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-05-15 08:47:56.631  INFO 15388 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2023-05-15 08:47:56.647  INFO 15388 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
-2023-05-15 08:47:56.678  INFO 15388 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2023-05-15 08:47:56.693  INFO 15388 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2023-05-15 08:47:56.834  INFO 15388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8140 (http) with context path ''
-2023-05-15 08:47:56.834  INFO 15388 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Started ServiceCmsApplication in 9.102 seconds (JVM running for 10.802)
-2023-05-15 08:48:37.266  INFO 15388 --- [http-nio-8140-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-15 08:48:37.266  INFO 15388 --- [http-nio-8140-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-15 08:48:37.291  INFO 15388 --- [http-nio-8140-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
-2023-05-15 08:48:45.753  INFO 15388 --- [http-nio-8140-exec-3] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2023-05-15 08:48:45.754  INFO 15388 --- [http-nio-8140-exec-3] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2023-05-15 08:48:45.865  INFO 15388 --- [http-nio-8140-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-05-15 08:48:46.242  INFO 15388 --- [http-nio-8140-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-05-15 08:57:17.619  INFO 15388 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-05-15 08:57:17.931  INFO 15388 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-05-15 08:57:17.947  INFO 15388 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-05-15 08:57:47.958  INFO 58304 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Starting ServiceCmsApplication on Cang with PID 58304 (D:\ArtWork\Java代码库\res_repair\service\service_cms\target\classes started by Cang in D:\ArtWork\Java代码库\res_repair)
-2023-05-15 08:57:47.960  INFO 58304 --- [main] c.C.r.service.cms.ServiceCmsApplication  : The following profiles are active: dev
-2023-05-15 08:57:48.856  INFO 58304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-05-15 08:57:48.856  INFO 58304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-05-15 08:57:48.887  INFO 58304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
-2023-05-15 08:57:49.231  INFO 58304 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-05-15 08:57:49.481  INFO 58304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8140 (http)
-2023-05-15 08:57:49.497  INFO 58304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-15 08:57:49.497  INFO 58304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2023-05-15 08:57:49.497  INFO 58304 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2023-05-15 08:57:49.497  INFO 58304 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2023-05-15 08:57:49.497  INFO 58304 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2023-05-15 08:57:49.497  INFO 58304 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-15 08:57:50.575  INFO 58304 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2023-05-15 08:57:50.672  INFO 58304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-15 08:57:50.672  INFO 58304 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2686 ms
-2023-05-15 08:57:51.844  INFO 58304 --- [main] org.redisson.Version                     : Redisson 3.11.2
-2023-05-15 08:57:52.987  INFO 58304 --- [redisson-netty-4-2] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for localhost/127.0.0.1:6379
-2023-05-15 08:57:52.987  INFO 58304 --- [redisson-netty-4-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for localhost/127.0.0.1:6379
-2023-05-15 08:57:53.361  INFO 58304 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-05-15 08:57:53.439  INFO 58304 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-05-15 08:57:53.626  INFO 58304 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2023-05-15 08:57:53.642  INFO 58304 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
-2023-05-15 08:57:53.658  INFO 58304 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2023-05-15 08:57:53.673  INFO 58304 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2023-05-15 08:57:53.798  INFO 58304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8140 (http) with context path ''
-2023-05-15 08:57:53.814  INFO 58304 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Started ServiceCmsApplication in 6.378 seconds (JVM running for 7.58)
-2023-05-15 08:58:06.598  INFO 58304 --- [http-nio-8140-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-15 08:58:06.598  INFO 58304 --- [http-nio-8140-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-15 08:58:06.605  INFO 58304 --- [http-nio-8140-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2023-05-15 08:58:06.737  INFO 58304 --- [http-nio-8140-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2023-05-15 08:58:06.738  INFO 58304 --- [http-nio-8140-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2023-05-15 10:02:57.841  INFO 58304 --- [lettuce-nioEventLoop-6-1] io.lettuce.core.protocol.CommandHandler  : null Unexpected exception during request: java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-
-java.io.IOException: 杩滅▼涓绘満寮鸿揩鍏抽棴浜嗕竴涓幇鏈夌殑杩炴帴銆�
-	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:192)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:382)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-
-2023-05-15 10:02:58.003  INFO 58304 --- [lettuce-eventExecutorLoop-1-9] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/127.0.0.1:6379
-2023-05-15 10:03:01.113  INFO 58304 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-05-15 15:51:13.774  INFO 57664 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Starting ServiceCmsApplication on Cang with PID 57664 (D:\ArtWork\Java代码库\res_repair\service\service_cms\target\classes started by Cang in D:\ArtWork\Java代码库\res_repair)
-2023-05-15 15:51:13.774  INFO 57664 --- [main] c.C.r.service.cms.ServiceCmsApplication  : The following profiles are active: dev
-2023-05-15 15:51:15.251  INFO 57664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-05-15 15:51:15.261  INFO 57664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-05-15 15:51:15.301  INFO 57664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
-2023-05-15 15:51:15.723  INFO 57664 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-05-15 15:51:16.073  INFO 57664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8140 (http)
-2023-05-15 15:51:16.093  INFO 57664 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-15 15:51:16.093  INFO 57664 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2023-05-15 15:51:16.093  INFO 57664 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2023-05-15 15:51:16.093  INFO 57664 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2023-05-15 15:51:16.093  INFO 57664 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2023-05-15 15:51:16.093  INFO 57664 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-15 15:51:17.287  INFO 57664 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2023-05-15 15:51:17.507  INFO 57664 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-15 15:51:17.507  INFO 57664 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3673 ms
-2023-05-15 15:51:19.647  INFO 57664 --- [main] org.redisson.Version                     : Redisson 3.11.2
-2023-05-15 15:51:21.054  INFO 57664 --- [redisson-netty-4-28] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for localhost/127.0.0.1:6379
-2023-05-15 15:51:21.054  INFO 57664 --- [redisson-netty-4-20] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for localhost/127.0.0.1:6379
-2023-05-15 15:51:21.434  INFO 57664 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-05-15 15:51:21.554  INFO 57664 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-05-15 15:51:21.764  INFO 57664 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2023-05-15 15:51:21.774  INFO 57664 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
-2023-05-15 15:51:21.804  INFO 57664 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2023-05-15 15:51:21.814  INFO 57664 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2023-05-15 15:51:21.964  INFO 57664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8140 (http) with context path ''
-2023-05-15 15:51:21.974  INFO 57664 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Started ServiceCmsApplication in 9.091 seconds (JVM running for 11.18)
-2023-05-15 15:51:30.641  INFO 57664 --- [http-nio-8140-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-15 15:51:30.641  INFO 57664 --- [http-nio-8140-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-15 15:51:30.647  INFO 57664 --- [http-nio-8140-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2023-05-15 15:51:30.767  INFO 57664 --- [http-nio-8140-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2023-05-15 15:51:30.768  INFO 57664 --- [http-nio-8140-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2023-05-15 15:51:30.879  INFO 57664 --- [http-nio-8140-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-05-15 15:51:31.256  INFO 57664 --- [http-nio-8140-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-05-15 18:33:45.492  INFO 57664 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-05-15 18:33:45.785  INFO 57664 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-05-15 18:33:45.805  INFO 57664 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-05-15 18:33:55.537  INFO 61348 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Starting ServiceCmsApplication on Cang with PID 61348 (D:\ArtWork\Java代码库\res_repair\service\service_cms\target\classes started by Cang in D:\ArtWork\Java代码库\res_repair)
-2023-05-15 18:33:55.547  INFO 61348 --- [main] c.C.r.service.cms.ServiceCmsApplication  : The following profiles are active: dev
-2023-05-15 18:33:56.439  INFO 61348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2023-05-15 18:33:56.449  INFO 61348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2023-05-15 18:33:56.469  INFO 61348 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
-2023-05-15 18:33:56.749  INFO 61348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2023-05-15 18:33:57.099  INFO 61348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8140 (http)
-2023-05-15 18:33:57.109  INFO 61348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-05-15 18:33:57.109  INFO 61348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2023-05-15 18:33:57.109  INFO 61348 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2023-05-15 18:33:57.109  INFO 61348 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2023-05-15 18:33:57.109  INFO 61348 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2023-05-15 18:33:57.109  INFO 61348 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2023-05-15 18:33:58.200  INFO 61348 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2023-05-15 18:33:58.300  INFO 61348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-05-15 18:33:58.300  INFO 61348 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2703 ms
-2023-05-15 18:34:00.363  INFO 61348 --- [main] org.redisson.Version                     : Redisson 3.11.2
-2023-05-15 18:34:02.361  INFO 61348 --- [redisson-netty-4-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for localhost/127.0.0.1:6379
-2023-05-15 18:34:02.361  INFO 61348 --- [redisson-netty-4-20] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for localhost/127.0.0.1:6379
-2023-05-15 18:34:02.731  INFO 61348 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-05-15 18:34:02.823  INFO 61348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-05-15 18:34:03.024  INFO 61348 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2023-05-15 18:34:03.034  INFO 61348 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
-2023-05-15 18:34:03.064  INFO 61348 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2023-05-15 18:34:03.081  INFO 61348 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2023-05-15 18:34:03.225  INFO 61348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8140 (http) with context path ''
-2023-05-15 18:34:03.225  INFO 61348 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Started ServiceCmsApplication in 8.235 seconds (JVM running for 9.917)
-2023-05-15 18:34:28.314  INFO 61348 --- [http-nio-8140-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-05-15 18:34:28.314  INFO 61348 --- [http-nio-8140-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-05-15 18:34:28.320  INFO 61348 --- [http-nio-8140-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2023-05-15 18:34:28.471  INFO 61348 --- [http-nio-8140-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
-2023-05-15 18:34:28.472  INFO 61348 --- [http-nio-8140-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
-2023-05-15 19:46:15.728  INFO 61348 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-16 08:39:58.533  INFO 50788 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Starting ServiceCmsApplication on Cang with PID 50788 (D:\ArtWork\Java代码库\res_repair\service\service_cms\target\classes started by Cang in D:\ArtWork\Java代码库\res_repair)
+2023-05-16 08:39:58.547  INFO 50788 --- [main] c.C.r.service.cms.ServiceCmsApplication  : The following profiles are active: dev
+2023-05-16 08:40:01.074  INFO 50788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-16 08:40:01.114  INFO 50788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-16 08:40:01.209  INFO 50788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 0 Redis repository interfaces.
+2023-05-16 08:40:02.011  INFO 50788 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-16 08:40:02.597  INFO 50788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8140 (http)
+2023-05-16 08:40:02.619  INFO 50788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-16 08:40:02.619  INFO 50788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-05-16 08:40:02.622  INFO 50788 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2023-05-16 08:40:02.623  INFO 50788 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2023-05-16 08:40:02.623  INFO 50788 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-05-16 08:40:02.623  INFO 50788 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-05-16 08:40:03.758  INFO 50788 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2023-05-16 08:40:03.991  INFO 50788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-16 08:40:03.992  INFO 50788 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5327 ms
+2023-05-16 08:40:06.875  INFO 50788 --- [main] org.redisson.Version                     : Redisson 3.11.2
+2023-05-16 08:40:08.469  INFO 50788 --- [redisson-netty-4-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for localhost/127.0.0.1:6379
+2023-05-16 08:40:08.479  INFO 50788 --- [redisson-netty-4-20] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for localhost/127.0.0.1:6379
+2023-05-16 08:40:08.953  INFO 50788 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-05-16 08:40:09.053  INFO 50788 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-16 08:40:09.276  INFO 50788 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-05-16 08:40:09.301  INFO 50788 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2023-05-16 08:40:09.325  INFO 50788 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-05-16 08:40:09.345  INFO 50788 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-05-16 08:40:09.517  INFO 50788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8140 (http) with context path ''
+2023-05-16 08:40:09.517  INFO 50788 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Started ServiceCmsApplication in 11.964 seconds (JVM running for 14.23)
+2023-05-16 08:40:13.821  INFO 50788 --- [http-nio-8140-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-16 08:40:13.822  INFO 50788 --- [http-nio-8140-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-16 08:40:13.831  INFO 50788 --- [http-nio-8140-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-05-16 08:40:13.986  INFO 50788 --- [http-nio-8140-exec-1] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2023-05-16 08:40:13.988  INFO 50788 --- [http-nio-8140-exec-1] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2023-05-16 08:40:14.120  INFO 50788 --- [http-nio-8140-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-16 08:40:14.551  INFO 50788 --- [http-nio-8140-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-16 09:32:23.574  INFO 50788 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-16 09:32:23.882  INFO 50788 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-16 09:32:23.902  INFO 50788 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-16 09:32:43.856  INFO 58784 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Starting ServiceCmsApplication on Cang with PID 58784 (D:\ArtWork\Java代码库\res_repair\service\service_cms\target\classes started by Cang in D:\ArtWork\Java代码库\res_repair)
+2023-05-16 09:32:43.856  INFO 58784 --- [main] c.C.r.service.cms.ServiceCmsApplication  : The following profiles are active: dev
+2023-05-16 09:32:44.746  INFO 58784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-16 09:32:44.756  INFO 58784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-16 09:32:44.776  INFO 58784 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2023-05-16 09:32:45.106  INFO 58784 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-16 09:32:45.416  INFO 58784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8140 (http)
+2023-05-16 09:32:45.426  INFO 58784 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-16 09:32:45.426  INFO 58784 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-05-16 09:32:45.426  INFO 58784 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2023-05-16 09:32:45.426  INFO 58784 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2023-05-16 09:32:45.426  INFO 58784 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-05-16 09:32:45.426  INFO 58784 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-05-16 09:32:46.525  INFO 58784 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2023-05-16 09:32:46.666  INFO 58784 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-16 09:32:46.666  INFO 58784 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2770 ms
+2023-05-16 09:32:48.468  INFO 58784 --- [main] org.redisson.Version                     : Redisson 3.11.2
+2023-05-16 09:32:49.798  INFO 58784 --- [redisson-netty-4-17] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for localhost/127.0.0.1:6379
+2023-05-16 09:32:49.798  INFO 58784 --- [redisson-netty-4-20] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for localhost/127.0.0.1:6379
+2023-05-16 09:32:50.318  INFO 58784 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-05-16 09:32:50.410  INFO 58784 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-16 09:32:50.591  INFO 58784 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-05-16 09:32:50.600  INFO 58784 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2023-05-16 09:32:50.620  INFO 58784 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-05-16 09:32:50.630  INFO 58784 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-05-16 09:32:50.750  INFO 58784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8140 (http) with context path ''
+2023-05-16 09:32:50.750  INFO 58784 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Started ServiceCmsApplication in 7.418 seconds (JVM running for 8.604)
+2023-05-16 09:34:13.926  INFO 58784 --- [http-nio-8140-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-16 09:34:13.926  INFO 58784 --- [http-nio-8140-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-16 09:34:13.936  INFO 58784 --- [http-nio-8140-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2023-05-16 09:37:29.557  INFO 58784 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-16 15:07:05.684  INFO 52756 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Starting ServiceCmsApplication on Cang with PID 52756 (D:\ArtWork\Java代码库\res_repair\service\service_cms\target\classes started by Cang in D:\ArtWork\Java代码库\res_repair)
+2023-05-16 15:07:05.694  INFO 52756 --- [main] c.C.r.service.cms.ServiceCmsApplication  : The following profiles are active: dev
+2023-05-16 15:07:07.232  INFO 52756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-05-16 15:07:07.232  INFO 52756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-05-16 15:07:07.272  INFO 52756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2023-05-16 15:07:07.812  INFO 52756 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-05-16 15:07:08.222  INFO 52756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8140 (http)
+2023-05-16 15:07:08.242  INFO 52756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-16 15:07:08.242  INFO 52756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2023-05-16 15:07:08.242  INFO 52756 --- [main] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2023-05-16 15:07:08.242  INFO 52756 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2023-05-16 15:07:08.252  INFO 52756 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-05-16 15:07:08.252  INFO 52756 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-05-16 15:07:09.353  INFO 52756 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2023-05-16 15:07:09.563  INFO 52756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-16 15:07:09.563  INFO 52756 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3819 ms
+2023-05-16 15:07:11.653  INFO 52756 --- [main] org.redisson.Version                     : Redisson 3.11.2
+2023-05-16 15:07:13.784  INFO 52756 --- [redisson-netty-4-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for localhost/127.0.0.1:6379
+2023-05-16 15:07:13.784  INFO 52756 --- [redisson-netty-4-20] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for localhost/127.0.0.1:6379
+2023-05-16 15:07:14.264  INFO 52756 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-05-16 15:07:14.374  INFO 52756 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-16 15:07:14.724  INFO 52756 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2023-05-16 15:07:14.744  INFO 52756 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2023-05-16 15:07:14.774  INFO 52756 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-05-16 15:07:14.794  INFO 52756 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-05-16 15:07:14.974  INFO 52756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8140 (http) with context path ''
+2023-05-16 15:07:14.974  INFO 52756 --- [main] c.C.r.service.cms.ServiceCmsApplication  : Started ServiceCmsApplication in 10.093 seconds (JVM running for 12.271)
+2023-05-16 15:07:59.177  INFO 52756 --- [http-nio-8140-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-16 15:07:59.178  INFO 52756 --- [http-nio-8140-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-16 15:07:59.185  INFO 52756 --- [http-nio-8140-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2023-05-16 15:07:59.406  INFO 52756 --- [http-nio-8140-exec-2] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2023-05-16 15:07:59.410  INFO 52756 --- [http-nio-8140-exec-2] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2023-05-16 15:07:59.599  INFO 52756 --- [http-nio-8140-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-16 15:08:00.048  INFO 52756 --- [http-nio-8140-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-16 15:19:56.736  INFO 52756 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-16 15:19:56.956  INFO 52756 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-05-16 15:19:56.966  INFO 52756 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

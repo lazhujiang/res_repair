@@ -3,6 +3,7 @@ package com.Cang.res.service.repair.mapper;
 import com.Cang.res.service.repair.entity.HpResource;
 import com.Cang.res.service.repair.entity.vo.ResourcePublishVo;
 import com.Cang.res.service.repair.entity.vo.ResourceVo;
+import com.Cang.res.service.repair.entity.vo.WebResourceVo;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.toolkit.Constants;
@@ -34,4 +35,6 @@ public interface HpResourceMapper extends BaseMapper<HpResource> {
     ResourcePublishVo selectResourcePublishVoById(String id);
 
     List<ResourceVo> selectHpResourceWithDescription();
+
+    WebResourceVo selectWebResourceVoById(String id);
 }

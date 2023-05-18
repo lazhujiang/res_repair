@@ -3,10 +3,7 @@ package com.Cang.res.service.repair.service.impl;
 import com.Cang.res.service.repair.entity.HpResource;
 import com.Cang.res.service.repair.entity.HpResourceDescription;
 import com.Cang.res.service.repair.entity.form.ResourceInfoForm;
-import com.Cang.res.service.repair.entity.vo.ResourcePublishVo;
-import com.Cang.res.service.repair.entity.vo.ResourceQueryVo;
-import com.Cang.res.service.repair.entity.vo.ResourceVo;
-import com.Cang.res.service.repair.entity.vo.WebResourceVo;
+import com.Cang.res.service.repair.entity.vo.*;
 import com.Cang.res.service.repair.mapper.HpResourceDescriptionMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.Cang.res.service.repair.mapper.HpResourceMapper;
@@ -181,5 +178,28 @@ public class HpResourceServiceImpl extends ServiceImpl<HpResourceMapper, HpResou
     public WebResourceVo selectWebResourceVoById(String id) {
         // 获取课程信息
         return baseMapper.selectWebResourceVoById(id);
+    }
+
+    @Override
+    public List<HpResource> webSelectList(WebResourceQueryVo webResourceQueryVo) {
+        QueryWrapper<HpResource> queryWrapper = new QueryWrapper<>();
+
+        // 查询已发布的课程
+        queryWrapper.eq("status",HpResource.RESOURCE_NORMAL);
+
+        if (!StringUtils.isEmpty(webResourceQueryVo.getCategoryParentId())) {
+            queryWrapper.eq("category_parent_id",webResourceQueryVo.getCategoryParentId());
+        }
+
+        if (!StringUtils.isEmpty(webResourceQueryVo.getCategoryId())) {
+            queryWrapper.eq("category_id", webResourceQueryVo.getCategoryId());
+        }
+
+
+        if (!StringUtils.isEmpty(webResourceQueryVo.getGmtCreateSort())) {
+            queryWrapper.orderByDesc("gmt_create");
+        }
+
+        return baseMapper.selectList(queryWrapper);
     }
 }

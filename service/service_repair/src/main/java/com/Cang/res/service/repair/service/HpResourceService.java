@@ -2,10 +2,7 @@ package com.Cang.res.service.repair.service;
 
 import com.Cang.res.service.repair.entity.HpResource;
 import com.Cang.res.service.repair.entity.form.ResourceInfoForm;
-import com.Cang.res.service.repair.entity.vo.ResourcePublishVo;
-import com.Cang.res.service.repair.entity.vo.ResourceQueryVo;
-import com.Cang.res.service.repair.entity.vo.ResourceVo;
-import com.Cang.res.service.repair.entity.vo.WebResourceVo;
+import com.Cang.res.service.repair.entity.vo.*;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -43,4 +40,6 @@ public interface HpResourceService extends IService<HpResource> {
      * @return
      */
     WebResourceVo selectWebResourceVoById(String id);
+
+    List<HpResource> webSelectList(WebResourceQueryVo webResourceQueryVo);
 }

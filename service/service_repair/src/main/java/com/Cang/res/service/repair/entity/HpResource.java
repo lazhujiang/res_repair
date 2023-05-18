@@ -28,6 +28,9 @@ public class HpResource implements Serializable {
 
     private static final long serialVersionUID=1L;
 
+    public static final String RESOURCE_DRAFT = "Draft";//未发布
+    public static final String RESOURCE_NORMAL = "Normal";//已发布
+
     @ApiModelProperty(value = "资源ID")
       @TableId(value = "id", type = IdType.ASSIGN_ID)
     private String id;

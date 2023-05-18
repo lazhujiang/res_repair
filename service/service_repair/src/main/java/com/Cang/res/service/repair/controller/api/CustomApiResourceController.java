@@ -2,7 +2,9 @@ package com.Cang.res.service.repair.controller.api;
 
 
 import com.Cang.res.common.base.result.R;
+import com.Cang.res.service.repair.entity.HpResource;
 import com.Cang.res.service.repair.entity.vo.ChapterVo;
+import com.Cang.res.service.repair.entity.vo.WebResourceQueryVo;
 import com.Cang.res.service.repair.entity.vo.WebResourceVo;
 import com.Cang.res.service.repair.service.HpChapterService;
 import com.Cang.res.service.repair.service.HpResourceService;
@@ -36,14 +38,14 @@ public class CustomApiResourceController {
     @Autowired
     private HpChapterService hpChapterService;
 
-    /*@ApiOperation("资源列表")
+    @ApiOperation("资源列表")
     @GetMapping("list")
     public R list(
             @ApiParam(value = "查询对象", required = true)
                     WebResourceQueryVo webResourceQueryVo) {
         List<HpResource> resourceList = hpResourceService.webSelectList(webResourceQueryVo);
         return R.ok().data("resourceList", resourceList);
-    }*/
+    }
 
     @ApiOperation("根据ID查询资源")
     @GetMapping("get/{resourceId}")

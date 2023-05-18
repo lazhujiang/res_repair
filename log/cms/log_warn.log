@@ -1,1 +1,1 @@
-2023-05-15 10:03:00.025  WARN 58304 --- [lettuce-nioEventLoop-6-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2023-05-17 09:25:17.923  WARN 45504 --- [lettuce-nioEventLoop-6-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost:6379]: Connection refused: no further information: localhost/127.0.0.1:6379

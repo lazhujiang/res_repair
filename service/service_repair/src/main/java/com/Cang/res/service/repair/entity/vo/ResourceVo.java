@@ -24,5 +24,6 @@ public class ResourceVo implements Serializable {
     private String description;
     private Date gmtCreate;
     private Date gmtModified;
-
+    private String categoryTitle;
+    private String categoryParentTitle;
 }

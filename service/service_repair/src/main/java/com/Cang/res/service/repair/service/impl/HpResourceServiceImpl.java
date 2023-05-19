@@ -156,6 +156,7 @@ public class HpResourceServiceImpl extends ServiceImpl<HpResourceMapper, HpResou
     public boolean publishResourceById(String id) {
         HpResource resource = new HpResource();
         resource.setId(id);
+        resource.setStatus(HpResource.RESOURCE_NORMAL);
         return this.updateById(resource);
     }
 
@@ -176,7 +177,7 @@ public class HpResourceServiceImpl extends ServiceImpl<HpResourceMapper, HpResou
     @Transactional(rollbackFor = Exception.class)
     @Override
     public WebResourceVo selectWebResourceVoById(String id) {
-        // 获取课程信息
+        // 获取资源信息
         return baseMapper.selectWebResourceVoById(id);
     }
 
@@ -184,7 +185,7 @@ public class HpResourceServiceImpl extends ServiceImpl<HpResourceMapper, HpResou
     public List<HpResource> webSelectList(WebResourceQueryVo webResourceQueryVo) {
         QueryWrapper<HpResource> queryWrapper = new QueryWrapper<>();
 
-        // 查询已发布的课程
+        // 查询已发布的资源
         queryWrapper.eq("status",HpResource.RESOURCE_NORMAL);
 
         if (!StringUtils.isEmpty(webResourceQueryVo.getCategoryParentId())) {

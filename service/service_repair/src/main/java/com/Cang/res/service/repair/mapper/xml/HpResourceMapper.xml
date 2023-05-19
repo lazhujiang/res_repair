@@ -5,6 +5,7 @@
         c.id,
             c.title,
             c.cover,
+            c.status,
             c.gmt_create AS gmtCreate,
             s1.title AS categoryParentTitle,
             s2.title AS categoryTitle

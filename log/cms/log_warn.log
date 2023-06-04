@@ -1,1 +1,4 @@
-2023-05-17 09:25:17.923  WARN 45504 --- [lettuce-nioEventLoop-6-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2023-05-26 15:43:53.248  WARN 27584 --- [lettuce-nioEventLoop-6-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2023-06-04 16:43:11.803  WARN 34880 --- [main] c.a.c.n.c.NacosPropertySourceLocator     : no instance of config service found, can't load config from nacos
+2023-06-04 16:43:23.669  WARN 34880 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-06-04 16:43:23.675  WARN 34880 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.

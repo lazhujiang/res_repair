@@ -16,6 +16,7 @@
         <module>service_repair</module>
         <module>service_ucenter</module>
         <module>service_cms</module>
+        <module>service_oss</module>
     </modules>
 
     <dependencies>
@@ -30,29 +31,29 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!--&lt;!&ndash;服务注册&ndash;&gt;
+        <!--服务注册-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
-        &lt;!&ndash;服务调用&ndash;&gt;
+        <!--服务调用-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
-        &lt;!&ndash;服务容错&ndash;&gt;
+        <!--服务容错-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
         </dependency>
 
-        &lt;!&ndash;配置中心&ndash;&gt;
+        <!--配置中心-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>-->
+        </dependency>
 
         <!--mybatis-plus-->
         <dependency>

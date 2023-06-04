@@ -1,9 +1,11 @@
 package com.Cang.res.service.repair.service.impl;
 
+import com.Cang.res.service.repair.entity.HpChapter;
 import com.Cang.res.service.repair.entity.HpResource;
 import com.Cang.res.service.repair.entity.HpResourceDescription;
 import com.Cang.res.service.repair.entity.form.ResourceInfoForm;
 import com.Cang.res.service.repair.entity.vo.*;
+import com.Cang.res.service.repair.mapper.HpChapterMapper;
 import com.Cang.res.service.repair.mapper.HpResourceDescriptionMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.Cang.res.service.repair.mapper.HpResourceMapper;
@@ -33,6 +35,9 @@ public class HpResourceServiceImpl extends ServiceImpl<HpResourceMapper, HpResou
 
     @Autowired
     private HpResourceDescriptionMapper resourceDescriptionMapper;
+
+    @Autowired
+    private HpChapterMapper chapterMapper;
 
     @Transactional(rollbackFor = Exception.class)
     @Override
@@ -98,9 +103,9 @@ public class HpResourceServiceImpl extends ServiceImpl<HpResourceMapper, HpResou
     @Override
     public boolean removeResourceById(String id) {
         // 章节信息：chapter
-        //QueryWrapper<Chapter> chapterQueryWrapper = new QueryWrapper<>();
-        //resourceCollectQueryWrapper.eq("resource_id",id);
-        //chapterMapper.delete(chapterQueryWrapper);
+        QueryWrapper<HpChapter> chapterQueryWrapper = new QueryWrapper<>();
+        chapterQueryWrapper.eq("resource_id",id);
+        chapterMapper.delete(chapterQueryWrapper);
 
         // 课程详情信息：resource_description
         resourceDescriptionMapper.deleteById(id);
